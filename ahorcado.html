@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container grid-md">
+        <div class="columns">
+            <div class="column col-10.5">
+                <h5>Ahorcado</h5>
+            </div>
+
+            <div class="column col-12">
+                <div class="column col-4 col-sm-12">
+                    <canvas id="canvas" width="450" height="450"></canvas>
+                    <p>Intentos restantes: <span id="intentos-restantes">7</span></p>
+                </div>
+                <div class="columns">
+                    <div class="column col-8 col-sm-11.5">
+                        <div id="word"></div>
+                    </div>
+                </div>
+            </div>           
+            <div class="column col-13" >
+                <div id="letras" class="columns" id="letras"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/palabras.js"></script>
+    <script type="text/javascript" src="js/ahorcadoJS.js"></script>
+  
+</body>
+</html>
