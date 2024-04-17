@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.carlosaltan.sistema.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="508.0" fitWidth="502.0" layoutX="-23.0" layoutY="-15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/estrellas-en-el-espacio_2560x1440_xtrafondos.com.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPantalla" alignment="BOTTOM_RIGHT" editable="false" layoutX="15.0" layoutY="50.0" promptText="0">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </TextField>
+      <GridPane layoutX="16.0" layoutY="114.0" prefHeight="330.0" prefWidth="313.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnPorciento" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="\%" textAlignment="CENTER">
+               <styleClass>
+                  <String fx:value="button2" />
+                  <String fx:value="button1" />
+               </styleClass></Button>
+            <Button fx:id="btnCe" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="CE" textAlignment="CENTER" GridPane.columnIndex="1">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnC" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="C" textAlignment="CENTER" GridPane.columnIndex="2">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnUnoX" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="1/x" textAlignment="CENTER" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnCuadrado" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="x²" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnRaiz" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="√x" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnDiv" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="÷" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnSiete" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="7" textAlignment="CENTER" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnOcho" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnNueve" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnMulti" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="*" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnCuatro" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="4" textAlignment="CENTER" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnUno" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="1" textAlignment="CENTER" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnMasMenos" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="+/-" textAlignment="CENTER" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnCero" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnPunto" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnMenos" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnMas" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnIgual" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="=" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnCinco" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnSeis" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnDos" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <Button fx:id="btnTres" minHeight="30.0" minWidth="74.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="74.0" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass></Button>
+            <ImageView fx:id="imgCerrar" fitHeight="51.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../images/apagado.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <MenuBar layoutX="14.0" layoutY="6.0" stylesheets="@../resource/Calc.css">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menu-item" text="Calculadora" />
+          <Menu mnemonicParsing="false" text="Conversor" />
+          <Menu mnemonicParsing="false" text="?" />
+        </menus>
+      </MenuBar>
+   </children>
+   <stylesheets>
+      <URL value="@../../carloslatan/resource/Calc.css" />
+      <URL value="@../resource/Calc.css" />
+   </stylesheets>
+</AnchorPane>
